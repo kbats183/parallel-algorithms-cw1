@@ -31,7 +31,7 @@ class QuickSortBenchmark(private val arraySize: Int, private val pqsBlockSize: I
             if (!testArray.contentEquals(validSortedArray)) {
                 throw AssertionError("array from " + qs + " is n't sorted: " + testArray.contentToString() + " sorted: " + validSortedArray.contentToString())
             }
-            startTime.until(endTime, ChronoUnit.MICROS)
+            startTime.until(endTime, ChronoUnit.MILLIS)
         }
     }
 
